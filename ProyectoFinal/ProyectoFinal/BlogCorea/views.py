@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from BlogCorea.models import *
-from . forms import *
+#from . forms import *
 
 def inicio(request):
     return render(request, 'BlogCorea/index.html', {})

@@ -3,7 +3,7 @@ from django.urls import path, include
 from . import views
 
 
-urlspatterns=[
+urlpatterns=[
     path('', views.inicio, name='inicio'),
     path('blogs/', views.blogs, name='blogs'),
     path('about/', views.about, name='about'),
