@@ -21,3 +21,4 @@ class Lugares(models.Model):
     descripcion=models.CharField(max_length=200)
     direccion=models.CharField(max_length=50)
     telefono=models.IntegerField()
+
