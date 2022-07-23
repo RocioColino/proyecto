@@ -1,0 +1,27 @@
+{% extends "BlogCorea/padre.html" %}
+{% load static %}
+
+
+{% block tituloPagina %}
+Buscar Cafeterias
+{% endblock %}
+
+{% block ContenidoCambia %}
+<p> <h4>Buscar cafeteria:</h4> 
+    <br>
+    <form action=""  method="post">
+        {% csrf_token %}
+
+        <input type="text" name="nombre" id="">
+        <input type="Submit" value="Buscar">
+    </form>
+</p>>
+<br>
+<p><h5>Resultado:</h5></p>
+    <ul>
+        {% for cafe in cafes %}
+            <li>{{cafe.nombre}}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock%}

@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from BlogCorea.models import *
-from ProyectoFinal.ProyectoFinal.BlogCorea.forms import NuevoBlog, NuevoCafe, NuevoLugar
-#from . forms import *
+#from ProyectoFinal.ProyectoFinal.BlogCorea.forms import NuevoBlog, NuevoCafe, NuevoLugar
+from . forms import *
 
 def inicio(request):
     return render(request, 'BlogCorea/index.html', {})
